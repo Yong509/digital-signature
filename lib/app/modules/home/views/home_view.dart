@@ -1,3 +1,5 @@
+import 'package:digital_signature/app/data/sample/sample.dart';
+import 'package:digital_signature/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -13,11 +15,15 @@ class HomeView extends GetView<HomeController> {
         title: const Text('HomeView'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: ListView.builder(
+        itemCount: SampleDocument.length,
+        itemBuilder: (_, index) {
+          return ListTile(
+            leading: const Icon(Icons.description),
+            title: Text(SampleDocument[index].title),
+            onTap: () => Get.toNamed(Routes.VIEW_DOCUMENT),
+          );
+        },
       ),
     );
   }
