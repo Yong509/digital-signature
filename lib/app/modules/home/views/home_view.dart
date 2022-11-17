@@ -21,7 +21,10 @@ class HomeView extends GetView<HomeController> {
           return ListTile(
             leading: const Icon(Icons.description),
             title: Text(SampleDocument[index].title),
-            onTap: () => Get.toNamed(Routes.VIEW_DOCUMENT),
+            onTap: () => Get.toNamed(
+              Routes.VIEW_DOCUMENT,
+              arguments: SampleDocument[index],
+            ),
           );
         },
       ),

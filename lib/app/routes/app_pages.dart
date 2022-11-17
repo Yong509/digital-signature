@@ -20,7 +20,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.VIEW_DOCUMENT,
-      page: () => const ViewDocumentView(),
+      page: () => ViewDocumentView(),
       binding: ViewDocumentBinding(),
     ),
   ];

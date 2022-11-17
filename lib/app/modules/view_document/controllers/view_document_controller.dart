@@ -1,9 +1,8 @@
 import 'package:get/get.dart';
 
 class ViewDocumentController extends GetxController {
-  //TODO: Implement ViewDocumentController
+  final showSignaturePad = false.obs;
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -18,6 +17,4 @@ class ViewDocumentController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  void increment() => count.value++;
 }

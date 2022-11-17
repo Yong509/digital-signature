@@ -7,9 +7,15 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
-  get: 4.6.5
   flutter:
     sdk: flutter
+  get: 4.6.5
+  syncfusion_flutter_pdf: ^20.3.57
+  syncfusion_flutter_signaturepad: ^20.3.57
+  path_provider: ^2.0.11
+  share_plus: ^6.3.0
+  syncfusion_flutter_pdfviewer: ^20.3.57
+  nil: ^1.1.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -18,7 +24,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
     - assets/certificate/certificate.pfx
-    - assets/pdf/lorem-ipsum-2022-11-17-04-39-11.pdf
+    - assets/pdf/sample.pdf
